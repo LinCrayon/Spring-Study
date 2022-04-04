@@ -11,7 +11,7 @@ public class MyTest {
     @Test
     public void test01() {
         //解析beans.xml文件 , 生成管理相应的Bean对象
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         //getBean : 参数即为spring配置文件中bean的id .
         Hello hello = (Hello) context.getBean("hello");
         hello.show();
@@ -19,14 +19,14 @@ public class MyTest {
 
     @Test
     public void test02() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserServiceImpl serviceImpl = (UserServiceImpl) context.getBean("ServiceImpl");
         serviceImpl.getUser();
     }
 
     @Test
     public void test03() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         //在执行getBean的时候, user已经创建好了 , 通过无参构造
         User user = (User) context.getBean("user");
         //调用对象的方法 .
@@ -35,7 +35,7 @@ public class MyTest {
 
     @Test
     public void testT() {
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserT userT = (UserT) context.getBean("userT01");
         userT.show();
     }

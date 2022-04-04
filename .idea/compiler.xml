@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-01-ioc" />
         <module name="spring-02-ioc" />
+        <module name="spring-03-di" />
       </profile>
     </annotationProcessing>
   </component>
