@@ -1,9 +1,9 @@
-package com.lsq.demo01;
+package com.lsq.dynamic01;
 
 /**
  * @author linshengqian
  */
-public class Host implements Rent{
+public class Host implements Rent {
 
 
     @Override

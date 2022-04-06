@@ -1,4 +1,4 @@
-package com.lsq.demo01;
+package com.lsq.static01;
 
 /**
  * @author linshengqian
