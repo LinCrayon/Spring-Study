@@ -7,7 +7,6 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.lsq.pojo"/>
     <context:annotation-config/>
 
     <bean id="dog1" class="com.lsq.pojo.Dog"/>
