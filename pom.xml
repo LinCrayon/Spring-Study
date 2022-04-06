@@ -12,6 +12,8 @@
         <module>spring-01-ioc</module>
         <module>spring-02-ioc</module>
         <module>spring-03-di</module>
+        <module>spring-04-autowired</module>
+        <module>spring-05-annotation</module>
     </modules>
 
     <properties>

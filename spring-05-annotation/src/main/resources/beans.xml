@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.lsq.pojo"/>
+    <context:annotation-config/>
+
+    <bean id="dog1" class="com.lsq.pojo.Dog"/>
+    <bean id="dog2" class="com.lsq.pojo.Dog"/>
+    <bean id="cat1" class="com.lsq.pojo.Cat"/>
+    <bean id="cat2" class="com.lsq.pojo.Cat"/>
+
+    <bean id="user" class="com.lsq.pojo.User"/>
+
+</beans>
+
+<!--  @Qualifier-->
+<!--  @Autowired是根据类型自动装配的，加上@Qualifier则可以根据byName的方式自动装配-->
+<!--  @Qualifier不能单独使用。-->
+
+<!--    @Resource-->
+<!--    @Resource如有指定的name属性，先按该属性进行byName方式查找装配；-->
+<!--    其次再进行默认的byName方式进行装配；-->
+<!--    如果以上都不成功，则按byType的方式自动装配。-->
+<!--    都不成功，则报异常。-->
