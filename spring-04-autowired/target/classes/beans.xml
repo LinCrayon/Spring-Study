@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dog" class="com.lsq.pojo.Dog"/>
+    <bean id="cat" class="com.lsq.pojo.Cat"/>
+
+<!--    autowire byName (按名称自动装配)-->
+<!--   将查找其类中所有的set方法名，例如setCat，获得将set去掉并且首字母小写的字符串，即cat。-->
+
+<!--    autowire byType (按类型自动装配)-->
+    <bean id="user" class="com.lsq.pojo.User" autowire="byType">
+<!--        <property name="cat" ref="cat"/>-->
+<!--        <property name="dog" ref="dog"/>-->
+        <property name="str" value="linshengqian"/>
+    </bean>
+
+</beans>
