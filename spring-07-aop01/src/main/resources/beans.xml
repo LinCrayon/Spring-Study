@@ -36,5 +36,9 @@
     </aop:config>
 
 
+    <!--第三种方式:注解实现-->
+    <bean id="annotationPointcut" class="com.lsq.config.AnnotationPointcut"/>
+    <aop:aspectj-autoproxy/>
+
 
 </beans>
