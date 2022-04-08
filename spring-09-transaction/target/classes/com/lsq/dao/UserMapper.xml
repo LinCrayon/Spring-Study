@@ -6,6 +6,13 @@
     <select id="selectUser" resultType="User">
         select * from user
     </select>
+    <insert id="addUser" parameterType="com.lsq.pojo.User">
+        insert into user (id,name,pwd) values (#{id},#{name},#{pwd})
+    </insert>
+
+    <delete id="deleteUser" parameterType="int">
+        delete from user where id = #{id}
+    </delete>
 
 
 </mapper>
